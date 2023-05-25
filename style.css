@@ -1,0 +1,164 @@
+html{
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(to top,#0f5e9c 15%,#2389da ,#1ca3ec ,
+  #5abcd8 ,#74ccf4 );
+  }
+  
+  .bubble {
+    position: relative;
+    width: 520px;
+    height: 520px;
+    left: 34%;
+    top:90px;
+    border-radius: 200px 200px 230px 180px/250px ;
+    box-shadow: inset 5px -5px 25px 5px white ,
+     inset -25px 15px 15px 3px #2576d8 ,
+    inset -30px 25px 25px 3px #19549b,
+    -5px 0px 20px  #19549b,
+     5px 0px 20px  #19549b;
+  }
+  .bubble::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #e6fdfbea;
+    border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+    left: 355px;
+    top: 100px;
+    box-shadow: 16px 40px 0 -10px rgba(255, 255, 255, 0.959);
+    opacity: 0.8;
+  }
+  h2{
+    text-transform: capitalize;
+    position: absolute;
+    right: 38%;
+    top: 40px;
+    font-size: xx-large;
+    color:#318CFE;
+    font-weight: 750;
+    text-shadow: 2px 2px 5px white,
+    -2px -2px 5px white ;
+    border: 0px solid #318CFE;
+    padding: 19px 20px 20px ;
+    border-radius: 50px 50px 50px 50px/50px;
+    background-color: #0f5f9c00;
+    box-shadow: inset -3px 1px 5px  white ,
+     inset 5px -3px 5px 1px #2576d8;
+  }
+  .form input{
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 50%;
+    padding: 8px 13px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px ;
+    border-radius: 25px;
+    border: 0px solid #318CFE;
+    box-shadow: inset -1px 0px 8px 1px white ,
+     inset 10px -7px 5px 1px #2576d8;
+    outline: none;
+  }
+  .input{
+    position: relative;
+    top: 20px;
+  }
+  .form{
+    position: relative;
+    top: 30%;
+    left: 20%;
+  }
+  .form label{
+    font-weight: 600;
+    font-size: x-large;
+    color:#318CFE;
+    text-shadow: 4px 0px 3.5px white,
+    -2.5px -2px 3.5px white ;
+  }
+  form .sub{
+    font-size: 20px;
+    font-weight: 650;
+    padding: 30px ;
+    width:fit-content;
+    position: relative;
+    left: 75px;
+    top: 50px;
+    cursor:pointer;
+    border-radius: 200% ;
+    border: none;
+    box-shadow: inset -1.5px -1px 8px 1px white ;
+    color: #0f5e9c;
+    text-shadow: 3px 3px 4px white,
+    -3px -3px 3.7px white ;
+  }
+  .bubble{
+    animation: bubble 3.5s linear infinite normal ;
+  }
+  
+  @keyframes bubble{
+    0%{
+      border-top-left-radius: 250px 300px ;
+      border-top-right-radius:  250px 200px;
+      border-bottom-right-radius: 230px;
+      border-bottom-left-radius: 180px;
+    }
+    12%{
+      border-top-left-radius:200px 250px ;
+      border-top-right-radius: 300PX 250px ;
+      border-bottom-right-radius: 230px;
+      border-bottom-left-radius: 180px;
+    }
+    25%{
+      border-top-left-radius:200px ;
+      border-top-right-radius: 250px 300px;
+      border-bottom-right-radius: 257px 230px;
+      border-bottom-left-radius: 180px;
+    }
+    37%{
+      border-top-left-radius:200px ;
+      border-top-right-radius: 200px 250px;
+      border-bottom-right-radius: 330px 257px;
+      border-bottom-left-radius: 180px;
+    }
+    50%{
+      border-top-left-radius:200px ;
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 257px 330px;
+      border-bottom-left-radius: 230px 180px ;
+    }
+    62%{
+      border-top-left-radius:200px ;
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 230px 257px;
+      border-bottom-left-radius: 270px 230px;
+    }
+    75%{
+      border-top-left-radius:250px 200px ;
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 230px;
+      border-bottom-left-radius: 230px 270px;
+    }
+    87%{
+      border-top-left-radius:300px 250px ;
+      border-top-right-radius: 200px;
+      border-bottom-right-radius: 230px;
+      border-bottom-left-radius: 180px 230px ;
+    }
+    100%{
+      border-top-left-radius:250px 300px ;
+      border-top-right-radius: 250px 200px;
+      border-bottom-right-radius: 230px;
+      border-bottom-left-radius: 180px;
+    }
+  }
+  
